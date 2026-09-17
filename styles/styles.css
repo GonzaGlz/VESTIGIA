@@ -1,0 +1,204 @@
+/* paleta */
+
+/* 
+#1F3D3A   Verde profundo rgb(31, 61, 58)
+#F4EFE6   Crema antiguo rgb(244, 239, 230)
+#C97852   Terracota rgb(201, 120, 82)
+#B59A5A   Oro envejecido rgb(181, 154, 90)
+*/
+
+:root{
+    --verde-profundo: #1F3D3A;
+    --crema-antiguo: #F4EFE6;
+    --terracota: #C97852;
+    --oro-envejecido: #B59A5A;
+}
+
+/* familia tipográfica */
+/* font-family: "Playfair Display", serif; */
+/* font-family: "Montserrat", sans-serif; */
+
+/* Playfair Display → títulos y elementos que queremos destacar.
+Montserrat → texto normal, navegación y artículos */
+
+
+/* estilos generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: var(--crema-antiguo);
+    color: var(--verde-profundo)
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* font family y color encabezados */
+
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--terracota);
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--verde-profundo);
+}
+
+h3{
+    font-size: 1.2rem;
+    color: var(--terracota);
+}
+
+/* estilos header y footer */
+
+header, footer{
+    color: var(--crema-antiguo);
+    background-color: var(--verde-profundo);
+}
+
+
+.nav {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between; /* justify-content hace que  |LOGO    MENU|   queden separados */
+    align-items: center; /* los centra verticalmente */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+.nav-list {
+    display: flex; /* display: flex deja el menu horizontal */
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--crema-antiguo);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--oro-envejecido); /* efecto cuando pasás el mouse al color oro envejecido */
+}
+
+
+/* main */
+
+main h2, main h3, main p{
+    margin-bottom: 15px;
+}
+
+main h2{
+    margin-bottom: 20px;
+}
+
+main{
+    padding:60px;
+}
+
+main section {
+    margin-bottom: 60px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.tarjetas article{
+    flex: 1 1 300px; /* flex 1 1 300 - 1 crece si sobra espacio 1 puede achicarse si falta 300px ancho de referencia */
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-top: 3px solid var(--terracota);
+}
+.tarjeta-proyectos{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.vestigio-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+
+footer{
+    padding: 40px 0;
+}
+
+footer ul{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer img{
+    width: 32px;
+    height: auto;
+}
+
+footer iframe{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    border: 0;
+    margin: 20px auto 0;
+}
+
+/* imagenes */
+
+main img {  
+/* modifique el tamaño de imágenes ya que las creadas por IA eran gigantes y hacia la navegación muy molesta */
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
