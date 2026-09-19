@@ -139,9 +139,44 @@ main h2{
 main section {
     margin-bottom: 60px;
 }
+
+/*=============================================================
+    HERO - edición de headers
+==============================================================*/
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-texto {
+    background-color: rgba(31, 61, 58, 0.55);
+    padding: 15px 25px;
+}
+
+.hero-texto h1,
+.hero-texto p {
+    color: var(--crema-antiguo);
+}
+
+/* imagenes de los fondos de cada pagina */
+.hero-servicios { background-image: url("../img/viajero-aeropuerto.jpg"); }
+.hero-inicio    { background-image: url("../img/paisaje-montanoso.jpg"); }
+.hero-sobre-mi  { background-image: url("../img/explorador.jpg"); }
+.hero-contacto  { background-image: url("../img/contact-us.jpg"); }
+.hero-proyectos  { background-image: url(../img/destinos.jpg); }
+
+
 /* ============================================================
-    TARJETAS "DESCUBRÍ" - index.html
+    SECCIÓN "INICIO" - index.html
 ============================================================ */
+
 .tarjetas{
     display: grid;
     grid-template-columns: 1fr;
@@ -192,28 +227,6 @@ main section {
 /* ============================================================
     SECCIÓN "Experiencias / Destinos" — servicios.html
 ============================================================ */
-
-.hero-servicios{
-    background-image: url(../img/viajero-aeropuerto.jpg);
-    background-size: cover; /*-- la foto cubre el ancho sin deformarse --*/
-    background-position: center;
-    height: 220px; /*-- quiero crear un banner bajo--*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.hero-servicios-texto {
-    background-color: rgba(31, 61, 58, 0.55); /* verde-profundo semitransparente, para que el texto se lea sobre la foto */
-    padding: 15px 25px;
-}
-
-.hero-servicios-texto h1,
-.hero-servicios-texto p {
-    color: var(--crema-antiguo);
-}
 
 .experiencias{
     display:grid;
@@ -339,6 +352,10 @@ main img {
     /*--- Main: más padding en pantallas grandes --- */  
     main{
     padding:60px;
+    }
+    /* limitar la altura a 320px */
+    .hero {
+        height: 320px;
     }
 
     /* Tarjetas "Descubrí" (Index.html): arma el grid con áreas */
