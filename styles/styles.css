@@ -22,18 +22,14 @@
 Montserrat → texto normal, navegación y artículos */
 
 
-/* estilos generales */
+/* ============================================================
+    RESET Y BASE
+============================================================ */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.contenedor{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px;
 }
 
 body{
@@ -53,8 +49,16 @@ a{
     color: inherit;
 }
 
+/* estilos del contenedor. wrapper que centra el contenido y le da un ancho máximo. */
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
 
-/* font family y color encabezados */
+/* ============================================================
+    TIPOGRAFÍA — encabezados globales (h1, h2, h3)
+============================================================ */
 
 h1, h2, h3{
     font-family: "Playfair Display", serif;
@@ -77,17 +81,19 @@ h3{
     color: var(--terracota);
 }
 
-/* estilos header y footer */
+/* ============================================================
+    HEADER Y NAV
+============================================================ */
 
 header, footer{
     color: var(--crema-antiguo);
     background-color: var(--verde-profundo);
 }
 
-
 .nav {
     padding: 15px 0;
     display: flex;
+    flex-direction: column; /* flex-direction: column hace que el menu quede vertical */
     justify-content: space-between; /* justify-content hace que  |LOGO    MENU|   queden separados */
     align-items: center; /* los centra verticalmente */
 }
@@ -97,10 +103,9 @@ header, footer{
     height: auto;
 }
 
-
 .nav-list {
     display: flex; /* display: flex deja el menu horizontal */
-    gap: 30px;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -115,8 +120,13 @@ header, footer{
     color: var(--oro-envejecido); /* efecto cuando pasás el mouse al color oro envejecido */
 }
 
+/* ============================================================
+    MAIN — reglas generales de espaciado
+============================================================ */
 
-/* main */
+main{
+    padding:10px;
+}
 
 main h2, main h3, main p{
     margin-bottom: 15px;
@@ -126,33 +136,77 @@ main h2{
     margin-bottom: 20px;
 }
 
-main{
-    padding:60px;
-}
-
 main section {
     margin-bottom: 60px;
 }
-
+/* ============================================================
+    TARJETAS "DESCUBRÍ" - index.html
+============================================================ */
 .tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "principal"
+    "historia" 
+    "religion"
+    "cultura" 
+    "vestigios";
 }
 
+.principal { grid-area: principal; }
+.historia  { grid-area: historia;  }
+.religion  { grid-area: religion;  }
+.cultura   { grid-area: cultura;   }
+.vestigios { grid-area: vestigios; }
+
+/* ============================================================
+    SECCIÓN "SOBRE VESTIGIA / SOBRE NOSOTROS" — sobre-mi.html
+============================================================ */
+
+.sobre-vestigia{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.subtitulo {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: var(--terracota);
+}
+
+.encabezado-vestigia {
+    display: flex;
+    grid-column: 1 / -1;  /* hace que el texto se muestre en la columna 1 y llegue hasta la otra columna (-1) */
+    align-items: baseline;
+    gap: 15px;
+    font-weight: bold;
+}
+.sobre-nosotros{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* ============================================================
+    TARJETAS GENÉRICAS (fondo blanco con borde superior)
+============================================================ */
 
 .tarjetas article{
-    flex: 1 1 300px; /* flex 1 1 300 - 1 crece si sobra espacio 1 puede achicarse si falta 300px ancho de referencia */
     padding: 20px;
     background-color: #FFFFFF;
     border-top: 3px solid var(--terracota);
 }
+
+/* .tarjeta-proyectos → <p class="tarjeta-proyectos"> bajada de proyectos.html */
 .tarjeta-proyectos{
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-.vestigio-title {
+/* .vestigio-oculto → texto destacado tipo "dato curioso" en proyectos.html */
+.vestigio-oculto{
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -160,8 +214,9 @@ main section {
     margin-bottom: 10px;
 }
 
-
-/* Footer */
+/* ============================================================
+    FOOTER — igual en todas las páginas
+============================================================ */
 
 footer{
     padding: 40px 0;
@@ -169,7 +224,7 @@ footer{
 
 footer ul{
     display: flex;
-    gap: 50px;
+    gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
 }
@@ -194,11 +249,66 @@ footer iframe{
     margin: 20px auto 0;
 }
 
-/* imagenes */
+/* ============================================================
+    IMÁGENES DEL MAIN
+============================================================ */
 
 main img {  
 /* modifique el tamaño de imágenes ya que las creadas por IA eran gigantes y hacia la navegación muy molesta */
     max-width: 600px;
     width: 100%;
     height: auto;
+}
+
+/* ============================================================
+    RESPONSIVE — desktop (min-width: 1024px) 
+============================================================ */
+
+@media (min-width: 1024px) {
+
+   /* --- Header y nav: pasa de columna a fila --- */
+    .nav {
+        flex-direction: row; /* flex-direction: row hace que el menu quede horizontal */
+    }
+    .nav-list {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    /*--- Main: más padding en pantallas grandes --- */  
+    main{
+    padding:60px;
+    }
+
+    /* Tarjetas "Descubrí" (Index.html): arma el grid con áreas */
+    .tarjetas{
+        grid-template-columns: 2fr repeat(2, 1fr);
+        grid-template-areas:
+        "principal historia religion"
+        "principal cultura vestigios";
+    } 
+
+    /* Sobre VESTIGIA (sobre-mi.html): 2 columnas para los .info-vestigia */
+    .sobre-vestigia{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Sobre nosotros (Sobre-mi.html) */
+    .sobre-nosotros{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        grid-template-areas:
+        "subtitulo-nosotros subtitulo-nosotros"
+        "img-nosotros nuestra-mirada" 
+        "img-nosotros nuestra-filosofia";
+    }
+    .sobre-nosotros h2 { grid-area: subtitulo-nosotros;}
+    .img-nosotros      { grid-area: img-nosotros;      }
+    .nuestra-mirada    { grid-area: nuestra-mirada;    }
+    .nuestra-filosofia { grid-area: nuestra-filosofia; }
+    
+    /* --- 9. Footer: más separación entre íconos sociales --- */
+    footer ul{
+        gap: 50px;
+    }
 }
