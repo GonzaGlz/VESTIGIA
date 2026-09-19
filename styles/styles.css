@@ -190,6 +190,49 @@ main section {
 }
 
 /* ============================================================
+    SECCIÓN "Experiencias / Destinos" — servicios.html
+============================================================ */
+
+.hero-servicios{
+    background-image: url(../img/viajero-aeropuerto.jpg);
+    background-size: cover; /*-- la foto cubre el ancho sin deformarse --*/
+    background-position: center;
+    height: 220px; /*-- quiero crear un banner bajo--*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hero-servicios-texto {
+    background-color: rgba(31, 61, 58, 0.55); /* verde-profundo semitransparente, para que el texto se lea sobre la foto */
+    padding: 15px 25px;
+}
+
+.hero-servicios-texto h1,
+.hero-servicios-texto p {
+    color: var(--crema-antiguo);
+}
+
+.experiencias{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px
+}
+
+.experiencias article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.experiencias article h3 {
+    margin-bottom: 10px;
+}
+
+/* ============================================================
     TARJETAS GENÉRICAS (fondo blanco con borde superior)
 ============================================================ */
 
@@ -206,6 +249,12 @@ main section {
 }
 
 .sobre-nosotros article{
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-top: 3px solid var(--terracota);
+}
+
+.experiencias article{
     padding: 20px;
     background-color: #FFFFFF;
     border-top: 3px solid var(--terracota);
@@ -318,8 +367,13 @@ main img {
     .img-nosotros      { grid-area: img-nosotros;      }
     .nuestra-mirada    { grid-area: nuestra-mirada;    }
     .nuestra-filosofia { grid-area: nuestra-filosofia; }
-    
-    /* --- 9. Footer: más separación entre íconos sociales --- */
+
+    /* Servicios (servicios.html) */
+    .experiencias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --- Footer: más separación entre íconos sociales --- */
     footer ul{
         gap: 50px;
     }
