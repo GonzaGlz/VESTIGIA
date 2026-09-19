@@ -164,7 +164,7 @@ main section {
     SECCIÓN "SOBRE VESTIGIA / SOBRE NOSOTROS" — sobre-mi.html
 ============================================================ */
 
-.sobre-vestigia{
+.sobre-vestigia {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -183,7 +183,7 @@ main section {
     gap: 15px;
     font-weight: bold;
 }
-.sobre-nosotros{
+.sobre-nosotros {
     display:grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -194,6 +194,18 @@ main section {
 ============================================================ */
 
 .tarjetas article{
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-top: 3px solid var(--terracota);
+}
+
+.sobre-vestigia article{
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-top: 3px solid var(--terracota);
+}
+
+.sobre-nosotros article{
     padding: 20px;
     background-color: #FFFFFF;
     border-top: 3px solid var(--terracota);
