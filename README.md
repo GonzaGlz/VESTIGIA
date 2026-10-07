@@ -12,55 +12,79 @@ El proyecto busca mostrar los lugares desde una perspectiva diferente, combinand
 
 - HTML5
 - CSS3
+- Bootstrap
+- CSS Grid
 - Flexbox
 - Box Model
 - Diseño responsive
 
+## Diseño y maquetación
+
+El proyecto combina diferentes herramientas de maquetación y estilos:
+
+- **Bootstrap** para componentes y estructura responsive.
+- **CSS Grid** para organizar las tarjetas y diferentes secciones del sitio.
+- **Flexbox** para la alineación y distribución de elementos.
+- **Media Queries** para adaptar el contenido a diferentes tamaños de pantalla.
+- **CSS personalizado** para mantener la identidad visual de VESTIGIA.
+
 ## Secciones del sitio
 
-**Inicio**
+### Inicio
+
 Página principal del sitio, donde se presenta VESTIGIA y su concepto.
 
-**Sobre mí**
+### Sobre mí
+
 Presentación del creador del proyecto y de la idea detrás de VESTIGIA.
 
-**Proyectos**
+### Proyectos
+
 Espacio destinado a mostrar diferentes destinos, culturas e historias.
 
-**Servicios**
+### Servicios
+
 Sección destinada a presentar los servicios relacionados con viajes y contenido.
 
-**Contacto**
+### Contacto
+
 Página para ponerse en contacto con VESTIGIA.
 
 ## Objetivo del proyecto
 
 El objetivo es desarrollar un sitio web visual, claro y fácil de navegar, aplicando los conocimientos adquiridos durante el curso de Desarrollo Web.
 
-## Paleta de 4 colores
+El proyecto busca integrar los conocimientos de HTML, CSS, Bootstrap, Flexbox, CSS Grid y diseño responsive en un sitio web completo.
 
-### Primario
-**Verde profundo** `#1F3D3A`
+## Paleta de colores
+
+### Verde profundo
+`#1F3D3A`
+
 Representa naturaleza, viaje, profundidad y tranquilidad.
 
-### Secundario
-**Crema antiguo** `#F4EFE6`
+### Crema antiguo
+`#F4EFE6`
+
 Da sensación de papel, mapas antiguos, libros e historia.
 
-### Acento
-**Terracota** `#C97852`
+### Terracota
+`#C97852`
+
 Evoca tierra, arquitectura, cerámica y culturas antiguas.
 
-### Cuarto color
-**Oro envejecido** `#B59A5A`
+### Oro envejecido
+`#B59A5A`
+
 Representa:
-- antigüedad
-- reliquias
-- templos
-- objetos históricos
-- manuscritos
-- patrimonio
-- importancia
+
+- Antigüedad
+- Reliquias
+- Templos
+- Objetos históricos
+- Manuscritos
+- Patrimonio
+- Importancia
 
 ## Autor
 
