@@ -1,0 +1,31 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as*;
+
+
+h1, h2, h3{
+    font-family: $fuente-titulos;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $color-acento;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-principal;
+}
+
+h3{
+    font-size: 1.2rem;
+    color: $color-acento;
+}
+
+.subtitulo {
+    font-family: $fuente-titulos;
+    font-style: italic;
+    color: $color-acento;
+}

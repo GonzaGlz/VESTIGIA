@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+//Extends
+
+
+%barras{
+    color: $color-fondo;
+    background-color: $color-principal;
+}
+
+%navegador{
+    color: $color-fondo !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.1s ease;
+}
+
+%marcos-destacado {
+    padding: 20px;
+    background-color: $color-blanco;
+    border-top: 3px solid $color-acento;
+}

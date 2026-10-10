@@ -1,0 +1,250 @@
+header, footer {
+  color: #F4EFE6;
+  background-color: #1F3D3A;
+}
+
+.nav-link, .navbar-brand {
+  color: #F4EFE6 !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.1s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #F4EFE6;
+  color: #1F3D3A;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #C97852;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1F3D3A;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #C97852;
+}
+
+main {
+  padding: 10px;
+}
+main h2,
+main h3,
+main p {
+  margin-bottom: 15px;
+}
+main h2 {
+  margin-bottom: 20px;
+}
+main section {
+  margin-bottom: 60px;
+}
+main .contenedor {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+main .hero {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+main .hero-texto h1,
+main .hero-texto p {
+  color: #F4EFE6;
+}
+main .hero-servicios {
+  background-image: url("../img/experiencias-banner.jpg");
+}
+main .hero-inicio {
+  background-image: url("../img/paisaje-montanoso.jpg");
+}
+main .hero-sobre-mi {
+  background-image: url("../img/explorador.jpg");
+}
+main .hero-contacto {
+  background-image: url("../img/contact-us.jpg");
+}
+main .hero-proyectos {
+  background-image: url(../img/travel-banner.jpg);
+}
+main .boton-viaje {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #C97852;
+  color: #F4EFE6;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+main .boton-viaje:hover {
+  transform: translateY(-4px);
+  background-color: #b86545;
+  border-color: #B59A5A;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+main .boton-viaje:focus {
+  outline: 3px solid #B59A5A;
+  outline-offset: 4px;
+}
+main .boton-viaje:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+main .imagen-libros {
+  position: relative;
+  width: 100%;
+}
+main .imagen-libros img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 400px;
+  object-fit: cover;
+}
+main .texto-libros {
+  position: absolute;
+  bottom: 30px;
+  left: 8%;
+  z-index: 1;
+  margin: 0;
+  max-width: 600px;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  background-color: transparent;
+  color: #F4EFE6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F3D3A !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link:active {
+  transform: scale(0.95);
+}
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+  color: #B59A5A !important;
+}
+
+.nav-link.active {
+  color: var(--oro-envejecido) !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.navbar-brand img {
+  height: 55px;
+  width: auto;
+}
+
+.dropdown-menu {
+  background-color: #F4EFE6;
+}
+
+.dropdown-item {
+  color: #1F3D3A;
+}
+.dropdown-item:hover {
+  background-color: #C97852;
+  color: #F4EFE6;
+}
+
+.navbar-toggler {
+  border-color: #F4EFE6;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  grid-template-areas: "principal" "historia" "religion" "cultura" "vestigios";
+}
+
+.principal {
+  grid-area: principal;
+}
+
+.historia {
+  grid-area: historia;
+}
+
+.religion {
+  grid-area: religion;
+}
+
+.cultura {
+  grid-area: cultura;
+}
+
+.vestigios {
+  grid-area: vestigios;
+}
+
+/*# sourceMappingURL=style.css.map */

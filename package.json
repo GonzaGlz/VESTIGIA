@@ -1,0 +1,23 @@
+{
+  "name": "vestigia",
+  "version": "1.0.0",
+  "description": "https://gonzaglz.github.io/VESTIGIA/",
+  "homepage": "https://github.com/GonzaGlz/VESTIGIA#readme",
+  "bugs": {
+    "url": "https://github.com/GonzaGlz/VESTIGIA/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaGlz/VESTIGIA.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
