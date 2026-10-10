@@ -1,0 +1,45 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as*;
+
+
+
+.tarjetas {
+    @include grid(1fr, 10px);
+    grid-template-areas:
+        "principal"
+        "historia"
+        "religion"
+        "cultura"
+        "vestigios";
+
+    .principal {
+        grid-area: principal;
+    }
+
+    .historia {
+        grid-area: historia;
+    }
+
+    .religion {
+        grid-area: religion;
+    }
+
+    .cultura {
+        grid-area: cultura;
+    }
+
+    .vestigios {
+        grid-area: vestigios;
+    }
+
+    @include grid(1fr, 10px);
+
+    .principal,
+    .historia,
+    .religion,
+    .cultura,
+    .vestigios {
+        @extend %marcos-destacado;
+    }
+}

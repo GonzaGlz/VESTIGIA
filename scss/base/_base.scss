@@ -1,0 +1,128 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as*;
+@use "../components/tarjetas" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-navegacion;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: $color-fondo;
+    color: $color-principal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    padding: 10px;
+
+    h2,
+    h3,
+    p {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    section {
+        margin-bottom: 60px;
+    }
+
+    img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+main.contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    .hero {
+        background-size: cover;
+        background-position: center;
+        height: 220px;
+        @include flex(null, center, center, null);
+        text-align: center;
+        margin-top: 20px;
+
+        .hero-texto {
+
+            h1,
+            p {
+                color: $color-fondo;
+            }
+        }
+
+        &.hero-servicios {
+            background-image: url("../img/experiencias-banner.jpg");
+        }
+
+        &.hero-inicio {
+            background-image: url("../img/paisaje-montanoso.jpg");
+        }
+
+        &.hero-sobre-mi {
+            background-image: url("../img/explorador.jpg");
+        }
+
+        &.hero-contacto {
+            background-image: url("../img/contact-us.jpg");
+        }
+
+        &.hero-proyectos {
+            background-image: url(../img/travel-banner.jpg);
+        }
+    }
+}
+
+.sobre-vestigia {
+    @include grid(1fr, 10px);
+}
+
+.encabezado-vestigia {
+    @include flex(null, null, baseline, 15px);
+    grid-column: 1 / -1;
+    font-weight: bold;
+}
+
+.sobre-nosotros {
+    @include grid(1fr, 10px)
+}
+
+.experiencias {
+    @include grid(1fr, 10px);
+}
+
+.destinos {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        padding: 60px;
+    }
+
+    .hero {
+        height: 320px;
+    }
+
+}

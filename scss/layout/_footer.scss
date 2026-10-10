@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as*;
+
+
+footer {
+    @extend %barras;
+
+    padding: 40px 0;
+
+    ul {
+        @include flex(null, center, null, 10px);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    img {
+        width: 32px;
+        height: auto;
+    }
+
+    iframe {
+        @include block(100%, 600px, 250px, null);
+        border: 0;
+        margin: 20px auto 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    footer ul {
+        gap: 50px;
+    }
+
+}

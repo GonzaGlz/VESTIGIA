@@ -1,0 +1,77 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as *;
+@use "../components/tarjetas" as *;
+
+
+
+
+section {
+    .boton-viaje {
+        display: inline-block;
+        padding: 4px 10px;
+        background-color: $color-acento;
+        color: $color-fondo;
+        text-decoration: none;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba($color-negro, 0.15);
+        transition:
+            transform 0.2s ease,
+            background-color 0.3s ease,
+            box-shadow 0.3s ease,
+            border-color 0.3s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+            background-color: $color-acento-hover;
+            border-color: $color-destacado;
+            box-shadow: 0 8px 18px rgba($color-negro, 0.25);
+        }
+
+        &:focus {
+            outline: 3px solid $color-destacado;
+            outline-offset: 4px;
+        }
+
+        &:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 5px rgba($color-negro, 0.2);
+        }
+    }
+
+
+    .imagen-libros {
+        position: relative;
+        width: 100%;
+
+        img {
+            @include block(100%, none, 400px, cover);
+        }
+
+        .texto-libros {
+            position: absolute;
+            bottom: 30px;
+            left: 8%;
+            z-index: 1;
+            margin: 0;
+            max-width: 600px;
+            font-family: $fuente-titulos;
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: 700;
+            background-color: transparent;
+            color: $color-fondo;
+            text-shadow: 0 1px 3px rgba($color-negro, 0.7);
+        }
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent, rgba(31, 61, 58, 0.9));
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+//Mixins con parametros
+
+@mixin flex($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid($template, $gap) {
+    display: grid;
+    grid-template-columns: $template;
+    gap: $gap;
+}
+
+@mixin block($width, $max, $height, $object) {
+    display: block;
+    width: $width;
+    max-width: $max;
+    height: $height;
+    object-fit: $object;
+}
