@@ -90,9 +90,10 @@ main img {
 }
 
 main.contenedor {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 10px 16px;
 }
 main.contenedor .hero {
   background-size: cover;
@@ -154,6 +155,18 @@ main.contenedor .hero.hero-proyectos {
   grid-template-columns: 1fr;
 }
 
+@media (min-width: 768px) {
+  main.contenedor {
+    padding: 20px 24px;
+  }
+  main.contenedor .hero {
+    height: 280px;
+  }
+  .tarjetas.destinos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
 @media (min-width: 1024px) {
   main {
     padding: 60px;
@@ -475,7 +488,7 @@ section .imagen-libros::after {
 }
 
 @media (min-width: 1024px) {
-  .tarjetas {
+  .tarjetas:not(.destinos) {
     grid-template-columns: 2fr repeat(2, 1fr);
     grid-template-areas: "principal historia religion" "principal cultura vestigios";
   }
@@ -502,8 +515,8 @@ section .imagen-libros::after {
   .experiencias {
     grid-template-columns: repeat(2, 1fr);
   }
-  .destinos {
-    grid-template-columns: repeat(3, 1fr);
+  .tarjetas.destinos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

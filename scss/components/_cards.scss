@@ -134,7 +134,7 @@ section {
 
 @media (min-width: 1024px) {
 
-    .tarjetas {
+    .tarjetas:not(.destinos) {
         grid-template-columns: 2fr repeat(2, 1fr);
         grid-template-areas:
             "principal historia religion"
@@ -174,8 +174,8 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .destinos {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    .tarjetas.destinos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
 }
