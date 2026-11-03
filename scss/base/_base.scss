@@ -78,6 +78,10 @@ main.contenedor {
 
         &.hero-inicio {
             background-image: url("../img/paisaje-montanoso.jpg");
+
+            .hero-texto h1 {
+                animation: aparecer-titulo 1s ease-out both;
+            }
         }
 
         &.hero-sobre-mi {

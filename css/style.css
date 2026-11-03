@@ -115,6 +115,9 @@ main.contenedor .hero.hero-servicios {
 main.contenedor .hero.hero-inicio {
   background-image: url("../img/paisaje-montanoso.jpg");
 }
+main.contenedor .hero.hero-inicio .hero-texto h1 {
+  animation: aparecer-titulo 1s ease-out both;
+}
 main.contenedor .hero.hero-sobre-mi {
   background-image: url("../img/explorador.jpg");
 }
@@ -345,38 +348,6 @@ section .boton-viaje:active {
   transform: translateY(1px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-section .imagen-libros {
-  position: relative;
-  width: 100%;
-}
-section .imagen-libros img {
-  display: block;
-  width: 100%;
-  max-width: none;
-  height: 400px;
-  object-fit: cover;
-}
-section .imagen-libros .texto-libros {
-  position: absolute;
-  bottom: 30px;
-  left: 8%;
-  z-index: 1;
-  margin: 0;
-  max-width: 600px;
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 700;
-  background-color: transparent;
-  color: #F4EFE6;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
-}
-section .imagen-libros::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(transparent, rgba(31, 61, 58, 0.9));
-}
 
 section .imagen-libros {
   position: relative;
@@ -460,6 +431,9 @@ section .imagen-libros::after {
   height: 220px;
   object-fit: cover;
 }
+.destinos .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 .destino-medina-fez .card-img-top {
   object-position: bottom;
@@ -517,6 +491,28 @@ section .imagen-libros::after {
   }
   .tarjetas.destinos {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@keyframes aparecer-titulo {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.destinos article {
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .destinos article:hover {
+    top: -6px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
   }
 }
 
