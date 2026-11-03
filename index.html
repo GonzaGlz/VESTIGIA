@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
@@ -55,14 +56,15 @@
         </div>
 
         <section>
-            <h2>Historias que sobrevivieron al tiempo. Culturas que todavía respiran. Lugares que tienen algo que contar.</h2>
+            <h2 data-aos="fade-up">Historias que sobrevivieron al tiempo. Culturas que todavía respiran. Lugares que tienen algo que
+                contar.</h2>
 
-            <p>Seguí el rastro de lo que otros dejaron atrás: templos, tradiciones y creencias que aún marcan el camino
+            <p data-aos="fade-up" data-aos-delay="100">Seguí el rastro de lo que otros dejaron atrás: templos, tradiciones y creencias que aún marcan el camino
             </p>
-            <a class="boton-viaje" href="pages/proyectos.html">Comenzar el viaje</a>
+            <a class="boton-viaje" href="pages/proyectos.html" data-aos="zoom-in" data-aos-delay="200">Comenzar el viaje</a>
 
             <article>
-                <h3>Más allá del destino</h3>
+                <h3 data-aos="fade-up" data-aos-delay="300">Más allá del destino</h3>
                 <p> No te contamos solamente adónde ir. Te contamos qué estás mirando.
                     VESTIGIA nace para descubrir el mundo desde una perspectiva diferente. Detrás de cada monumento,
                     cada tradición y cada paisaje existe una historia que merece ser conocida.</p>
@@ -70,35 +72,36 @@
         </section>
 
         <section>
-            <h2>Descubrí</h2>
+            <h2 data-aos="fade-up">Descubrí</h2>
             <div class="imagen-libros">
-            <img src="./img/historia.jpg" alt="pila de libros antiguos que acumulan desgaste por el paso del tiempo">
-            <p class="texto-libros">Tu siguiente destino puede ser más que solo un viaje</p>
+                <img src="./img/historia.jpg"
+                    alt="pila de libros antiguos que acumulan desgaste por el paso del tiempo">
+                <p class="texto-libros">Tu siguiente destino puede ser más que solo un viaje</p>
             </div>
             <div class="tarjetas">
-                <article class="principal">
+                <article class="principal" data-aos="fade-up" data-aos-delay="100">
                     <h3>Cada lugar tiene una historia para contar.</h3>
                     <p>Exploramos los destinos a través de diferentes aspectos que ayudan a comprender su verdadera
                         identidad.</p>
                 </article>
 
-                <article class="historia">
+                <article class="historia" data-aos="fade-up" data-aos-delay="200">
                     <h3>Historia</h3>
                     <p>Civilizaciones, acontecimientos, personajes y relatos que dejaron su huella a través del tiempo.
                     </p>
                 </article>
 
-                <article class="religion">
+                <article class="religion" data-aos="fade-up" data-aos-delay="300">
                     <h3>Religión & Creencias</h3>
                     <p>Las creencias, rituales y tradiciones que ayudaron a construir la identidad de cada cultura.</p>
                 </article>
 
-                <article class="cultura">
+                <article class="cultura" data-aos="fade-up" data-aos-delay="400">
                     <h3>Cultura</h3>
                     <p>Costumbres, idiomas, música, gastronomía y formas de entender la vida.</p>
                 </article>
 
-                <article class="vestigios">
+                <article class="vestigios" data-aos="fade-up" data-aos-delay="500">
                     <h3>Vestigios</h3>
                     <p>Detalles ocultos, lugares poco conocidos y pequeños secretos que muchos viajeros pasan por alto.
                     </p>
@@ -109,8 +112,10 @@
 
     <footer>
         <ul>
-            <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
+            </li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
+            </li>
             <li><a href="https://twitter.com/" target="_blank"><img src="./img/x.png" alt="Twitter/x"></a></li>
         </ul>
 
@@ -119,7 +124,14 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0183711532504!2d-58.38417972452465!3d-34.603696957496645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sit!4v1789838777379!5m2!1ses-419!2sit"
             allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

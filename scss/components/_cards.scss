@@ -100,6 +100,11 @@ section {
         height: 220px;
         object-fit: cover;
     }
+    .card {
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
 }
 
 .destino-medina-fez {
@@ -132,9 +137,10 @@ section {
     margin-bottom: 10px;
 }
 
+
 @media (min-width: 1024px) {
 
-    .tarjetas {
+    .tarjetas:not(.destinos) {
         grid-template-columns: 2fr repeat(2, 1fr);
         grid-template-areas:
             "principal historia religion"
@@ -174,8 +180,34 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .destinos {
-        grid-template-columns: repeat(3, 1fr);
+    .tarjetas.destinos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+}
+
+@keyframes aparecer-titulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
     }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.destinos article {
+    position: relative;
+    top: 0;
+    transition:
+        top 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .destinos article:hover {
+        top: -6px;
+        box-shadow: 0 12px 24px rgba($color-negro, 0.18);
+    }
 }

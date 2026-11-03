@@ -51,9 +51,10 @@ main {
 }
 
 main.contenedor {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 10px 16px;
 
     .hero {
         background-size: cover;
@@ -77,6 +78,10 @@ main.contenedor {
 
         &.hero-inicio {
             background-image: url("../img/paisaje-montanoso.jpg");
+
+            .hero-texto h1 {
+                animation: aparecer-titulo 1s ease-out both;
+            }
         }
 
         &.hero-sobre-mi {
@@ -113,6 +118,22 @@ main.contenedor {
 
 .destinos {
     grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+
+    main.contenedor {
+        padding: 20px 24px;
+    }
+
+    main.contenedor .hero {
+        height: 280px;
+    }
+
+    .tarjetas.destinos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
 }
 
 @media (min-width: 1024px) {
