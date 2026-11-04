@@ -10,7 +10,7 @@ section {
     .boton-viaje {
         display: inline-block;
         padding: 4px 10px;
-        background-color: $color-acento;
+        background-color: $color-acento-oscuro;
         color: $color-fondo;
         text-decoration: none;
         border: 2px solid transparent;
@@ -31,7 +31,7 @@ section {
         }
 
         &:focus {
-            outline: 3px solid $color-destacado;
+            outline: 3px solid $color-destacado-claro;
             outline-offset: 4px;
         }
 

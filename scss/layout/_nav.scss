@@ -31,12 +31,17 @@ ul {
         &:hover,
         &:active,
         &:focus {
-            color: $color-destacado !important;
+            color: $color-destacado-claro !important;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $color-destacado-claro;
+            outline-offset: 4px;
         }
     }
 
     .nav-link.active {
-        color: $color-destacado !important;
+        color: $color-destacado-claro !important;
     }
 }
 
@@ -83,6 +88,7 @@ ul {
     .nav {
         flex-direction: row;
     }
+
     .nav-list {
         flex-direction: row;
         gap: 30px;
