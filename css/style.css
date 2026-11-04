@@ -185,7 +185,7 @@ h1, h2, h3 {
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #C97852;
+  color: #A94F32;
 }
 
 h2 {
@@ -196,13 +196,13 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  color: #C97852;
+  color: #A94F32;
 }
 
 .subtitulo {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  color: #C97852;
+  color: #A94F32;
 }
 
 footer {
@@ -261,10 +261,14 @@ ul .nav-link:active {
   transform: scale(0.95);
 }
 ul .nav-link:hover, ul .nav-link:active, ul .nav-link:focus {
-  color: #B59A5A !important;
+  color: #D6B96C !important;
+}
+ul .nav-link:focus-visible {
+  outline: 2px solid #D6B96C;
+  outline-offset: 4px;
 }
 ul .nav-link.active {
-  color: #B59A5A !important;
+  color: #D6B96C !important;
 }
 
 .navbar-brand {
@@ -325,7 +329,7 @@ ul .nav-link.active {
 section .boton-viaje {
   display: inline-block;
   padding: 4px 10px;
-  background-color: #C97852;
+  background-color: #A94F32;
   color: #F4EFE6;
   text-decoration: none;
   border: 2px solid transparent;
@@ -336,12 +340,12 @@ section .boton-viaje {
 }
 section .boton-viaje:hover {
   transform: translateY(-4px);
-  background-color: #b86545;
+  background-color: #963F28;
   border-color: #B59A5A;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 section .boton-viaje:focus {
-  outline: 3px solid #B59A5A;
+  outline: 3px solid #D6B96C;
   outline-offset: 4px;
 }
 section .boton-viaje:active {
