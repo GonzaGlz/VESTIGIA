@@ -4,40 +4,36 @@
 @use "../components/tarjetas" as *;
 
 
+.boton-viaje {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: $color-acento-oscuro;
+    color: $color-fondo;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba($color-negro, 0.15);
+    transition:
+        transform 0.2s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 
+    &:hover {
+        transform: translateY(-4px);
+        background-color: $color-acento-hover;
+        border-color: $color-destacado;
+        box-shadow: 0 8px 18px rgba($color-negro, 0.25);
+    }
 
-section {
-    .boton-viaje {
-        display: inline-block;
-        padding: 4px 10px;
-        background-color: $color-acento-oscuro;
-        color: $color-fondo;
-        text-decoration: none;
-        border: 2px solid transparent;
-        border-radius: 8px;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba($color-negro, 0.15);
-        transition:
-            transform 0.2s ease,
-            background-color 0.3s ease,
-            box-shadow 0.3s ease,
-            border-color 0.3s ease;
+    &:focus {
+        outline: 3px solid $color-destacado-claro;
+        outline-offset: 4px;
+    }
 
-        &:hover {
-            transform: translateY(-4px);
-            background-color: $color-acento-hover;
-            border-color: $color-destacado;
-            box-shadow: 0 8px 18px rgba($color-negro, 0.25);
-        }
-
-        &:focus {
-            outline: 3px solid $color-destacado-claro;
-            outline-offset: 4px;
-        }
-
-        &:active {
-            transform: translateY(1px);
-            box-shadow: 0 2px 5px rgba($color-negro, 0.2);
-        }
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 5px rgba($color-negro, 0.2);
     }
 }

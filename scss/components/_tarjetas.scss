@@ -31,15 +31,6 @@
 
     .vestigios {
         grid-area: vestigios;
-    }
-
-    @include grid(1fr, 10px);
-
-    .principal,
-    .historia,
-    .religion,
-    .cultura,
-    .vestigios {
         @extend %marcos-destacado;
     }
 }

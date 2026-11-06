@@ -14,12 +14,6 @@
     height: auto;
 }
 
-.nav-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 ul {
     .nav-link {
         @extend %navegador;
@@ -84,10 +78,6 @@ ul {
 }
 
 @media (min-width: 1024px) {
-
-    .nav {
-        flex-direction: row;
-    }
 
     .nav-list {
         flex-direction: row;
