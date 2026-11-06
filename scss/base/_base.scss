@@ -73,11 +73,11 @@ main.contenedor {
         }
 
         &.hero-servicios {
-            background-image: url("../img/experiencias-banner.jpg");
+            background-image: url("../assets/img/experiencias-banner.jpg");
         }
 
         &.hero-inicio {
-            background-image: url("../img/paisaje-montanoso.jpg");
+            background-image: url("../assets/img/paisaje-montanoso.jpg");
 
             .hero-texto h1 {
                 animation: aparecer-titulo 1s ease-out both;
@@ -85,15 +85,15 @@ main.contenedor {
         }
 
         &.hero-sobre-mi {
-            background-image: url("../img/explorador.jpg");
+            background-image: url("../assets/img/explorador.jpg");
         }
 
         &.hero-contacto {
-            background-image: url("../img/contact-us.jpg");
+            background-image: url("../assets/img/contact-us.jpg");
         }
 
         &.hero-proyectos {
-            background-image: url(../img/travel-banner.jpg);
+            background-image: url(../assets/img/travel-banner.jpg);
         }
     }
 }
