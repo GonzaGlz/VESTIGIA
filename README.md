@@ -55,7 +55,7 @@ VESTIGIA/
 │
 ├── styles/
 │   └── style.css
-│   └── styles.css.map
+│   └── style.css.map
 │
 ├── pages/
 │   ├── contacto.html
@@ -64,11 +64,26 @@ VESTIGIA/
 │   └── sobre-mi.html
 │
 ├── scss/
-│   ├── base/
-│   ├── components/
-│   ├── layout/
-│   ├── utilities/
-│   └── main.scss
+├── base/
+│   ├── _base.scss
+│   └── _tipografia.scss
+│
+├── components/
+│   ├── _buttons.scss
+│   ├── _cards.scss
+│   └── _tarjetas.scss
+│
+├── layout/
+│   ├── _footer.scss
+│   ├── _header.scss
+│   └── _nav.scss
+│
+├── utilities/
+│   ├── _extends.scss
+│   ├── _mixins.scss
+│   └── _variables.scss
+│
+└── main.scss
 │
 ├── index.html
 ├── package.json
