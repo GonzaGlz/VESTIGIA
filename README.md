@@ -2,92 +2,95 @@ https://gonzaglz.github.io/VESTIGIA/
 
 # VESTIGIA
 
-*Donde los viajes dejan huella*
+### Donde los viajes dejan huella
 
-## Descripción
+VESTIGIA es un sitio web dedicado a descubrir destinos, culturas e historias alrededor del mundo. La propuesta es explorar cada lugar más allá de sus paisajes, acercándose a su historia, arquitectura, religión, tradiciones y pequeños detalles que muchas veces pasan desapercibidos para el viajero.
 
-VESTIGIA es un sitio web dedicado a explorar diferentes destinos, culturas e historias alrededor del mundo.
+El proyecto busca transmitir una mirada cultural y curiosa sobre los viajes, a través de una experiencia visual, intuitiva y adaptable a diferentes dispositivos.
 
-El proyecto busca mostrar los lugares desde una perspectiva diferente, combinando información sobre cultura, historia, religión y pequeños detalles o consejos que pueden pasar desapercibidos para un viajero.
+## Demo
+
+**Repositorio:** https://github.com/GonzaGlz/VESTIGIA
 
 ## Tecnologías utilizadas
 
-- HTML5
-- CSS3
-- Bootstrap
-- CSS Grid
-- Flexbox
-- Box Model
-- Diseño responsive
+- **HTML5:** estructura y contenido semántico.
+- **CSS3:** estilos y diseño visual.
+- **SCSS / Sass:** organización modular, variables, mixins y reutilización de estilos.
+- **Bootstrap 5.3.8:** componentes y funcionalidades responsive.
+- **JavaScript:** interactividad y funcionalidades de componentes.
+- **AOS 2.3.1:** animaciones al desplazarse por las páginas.
+- **Google Fonts:** tipografías Playfair Display y Montserrat.
 
-## Diseño y maquetación
+## Estructura del sitio
 
-El proyecto combina diferentes herramientas de maquetación y estilos:
+El proyecto está compuesto por cinco páginas principales:
 
-- **Bootstrap** para componentes y estructura responsive.
-- **CSS Grid** para organizar las tarjetas y diferentes secciones del sitio.
-- **Flexbox** para la alineación y distribución de elementos.
-- **Media Queries** para adaptar el contenido a diferentes tamaños de pantalla.
-- **CSS personalizado** para mantener la identidad visual de VESTIGIA.
+| Página | Descripción |
+|---|---|
+| **Inicio** | Presentación de VESTIGIA y su propuesta de explorar el mundo desde una perspectiva cultural. |
+| **Sobre mí** | Presentación del creador, su mirada y la filosofía del proyecto. |
+| **Proyectos** | Recorrido por destinos emblemáticos, sus historias y curiosidades. |
+| **Servicios** | Presentación de experiencias y propuestas relacionadas con los viajes. |
+| **Contacto** | Formulario de contacto y canales para comunicarse. |
 
-## Secciones del sitio
+## Características principales
 
-### Inicio
+- Diseño responsive y enfoque Mobile First.
+- Navegación adaptable con menú responsive.
+- Maquetación mediante Flexbox y CSS Grid.
+- Componentes de Bootstrap.
+- Tarjetas de contenido y carrusel de imágenes.
+- Animaciones y transiciones visuales.
+- Organización modular de estilos con SCSS.
+- Etiquetas HTML semánticas.
+- Optimización SEO on-page mediante títulos, meta descriptions y keywords específicas para cada página.
+- Atributos `alt` descriptivos en las imágenes.
+- Mejoras de accesibilidad en navegación, formularios y enlaces externos.
 
-Página principal del sitio, donde se presenta VESTIGIA y su concepto.
+## Organización de SCSS
 
-### Sobre mí
+Los estilos están organizados en módulos para facilitar su mantenimiento y reutilización.
 
-Presentación del creador del proyecto y de la idea detrás de VESTIGIA.
+```text
+scss/
+├── base/
+├── components/
+├── layout/
+├── utilities/
+└── main.scss
+```
 
-### Proyectos
+Los estilos SCSS se compilan en `css/style.css`, que es la hoja de estilos utilizada por las páginas del sitio.
 
-Espacio destinado a mostrar diferentes destinos, culturas e historias.
+## Identidad visual
 
-### Servicios
+La identidad de VESTIGIA está inspirada en los viajes, la historia, la naturaleza y el patrimonio cultural.
 
-Sección destinada a presentar los servicios relacionados con viajes y contenido.
+| Color | Nombre | Código |
+|---|---|---|
+| 🟢 | Verde profundo | `#1F3D3A` |
+| 🟡 | Crema antiguo | `#F4EFE6` |
+| 🟠 | Terracota | `#C97852` |
+| 🟤 | Oro envejecido | `#B59A5A` |
 
-### Contacto
+**Tipografías**
 
-Página para ponerse en contacto con VESTIGIA.
+- **Playfair Display:** títulos y elementos destacados.
+- **Montserrat:** textos, navegación y contenido general.
 
 ## Objetivo del proyecto
 
-El objetivo es desarrollar un sitio web visual, claro y fácil de navegar, aplicando los conocimientos adquiridos durante el curso de Desarrollo Web.
+VESTIGIA fue desarrollado como proyecto integrador del curso de **Desarrollo Web de Coderhouse**, aplicando progresivamente los conocimientos adquiridos en estructura HTML, estilos CSS, diseño responsive, preprocesadores, componentes, animaciones, SEO y accesibilidad.
 
-El proyecto busca integrar los conocimientos de HTML, CSS, Bootstrap, Flexbox, CSS Grid y diseño responsive en un sitio web completo.
-
-## Paleta de colores
-
-### Verde profundo
-`#1F3D3A`
-
-Representa naturaleza, viaje, profundidad y tranquilidad.
-
-### Crema antiguo
-`#F4EFE6`
-
-Da sensación de papel, mapas antiguos, libros e historia.
-
-### Terracota
-`#C97852`
-
-Evoca tierra, arquitectura, cerámica y culturas antiguas.
-
-### Oro envejecido
-`#B59A5A`
-
-Representa:
-
-- Antigüedad
-- Reliquias
-- Templos
-- Objetos históricos
-- Manuscritos
-- Patrimonio
-- Importancia
+El objetivo fue construir un sitio web completo, organizado y visualmente coherente, priorizando la experiencia de navegación y la identidad visual.
 
 ## Autor
 
-Gonzalo Galzerano
+**Gonzalo Galzerano**
+
+- GitHub: [@GonzaGlz](https://github.com/GonzaGlz)
+
+---
+
+*VESTIGIA — Donde los viajes dejan huella.*
