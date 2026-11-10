@@ -1,16 +1,14 @@
-https://gonzaglz.github.io/VESTIGIA/
+## Demo
+
+Netlify: https://vestigia-portfolio.netlify.app/
+GitHub Pages: https://gonzaglz.github.io/VESTIGIA/
 
 # VESTIGIA
 
 ### Donde los viajes dejan huella
 
 VESTIGIA es un sitio web dedicado a descubrir destinos, culturas e historias alrededor del mundo. La propuesta es explorar cada lugar más allá de sus paisajes, acercándose a su historia, arquitectura, religión, tradiciones y pequeños detalles que muchas veces pasan desapercibidos para el viajero.
-
 El proyecto busca transmitir una mirada cultural y curiosa sobre los viajes, a través de una experiencia visual, intuitiva y adaptable a diferentes dispositivos.
-
-## Demo
-
-**Repositorio:** https://github.com/GonzaGlz/VESTIGIA
 
 ## Tecnologías utilizadas
 
@@ -48,20 +46,36 @@ El proyecto está compuesto por cinco páginas principales:
 - Atributos `alt` descriptivos en las imágenes.
 - Mejoras de accesibilidad en navegación, formularios y enlaces externos.
 
-## Organización de SCSS
+## Estructura del proyecto
 
-Los estilos están organizados en módulos para facilitar su mantenimiento y reutilización.
-
-```text
-scss/
-├── base/
-├── components/
-├── layout/
-├── utilities/
-└── main.scss
+VESTIGIA/
+│
+├── assets/
+│   └── img/
+│
+├── styles/
+│   └── style.css
+│   └── styles.css.map
+│
+├── pages/
+│   ├── contacto.html
+│   ├── proyectos.html
+│   ├── servicios.html
+│   └── sobre-mi.html
+│
+├── scss/
+│   ├── base/
+│   ├── components/
+│   ├── layout/
+│   ├── utilities/
+│   └── main.scss
+│
+├── index.html
+├── package.json
+└── README.md
 ```
 
-Los estilos SCSS se compilan en `css/style.css`, que es la hoja de estilos utilizada por las páginas del sitio.
+Los estilos SCSS se compilan en `styles/style.css`, que es la hoja de estilos utilizada por las páginas del sitio.
 
 ## Identidad visual
 
@@ -82,7 +96,6 @@ La identidad de VESTIGIA está inspirada en los viajes, la historia, la naturale
 ## Objetivo del proyecto
 
 VESTIGIA fue desarrollado como proyecto integrador del curso de **Desarrollo Web de Coderhouse**, aplicando progresivamente los conocimientos adquiridos en estructura HTML, estilos CSS, diseño responsive, preprocesadores, componentes, animaciones, SEO y accesibilidad.
-
 El objetivo fue construir un sitio web completo, organizado y visualmente coherente, priorizando la experiencia de navegación y la identidad visual.
 
 ## Autor
