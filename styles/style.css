@@ -448,6 +448,12 @@ section .imagen-libros::after {
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .img-nosotros {
+    max-width: 100%;
+    height: auto;
+  }
+}
 @media (min-width: 1024px) {
   .tarjetas:not(.destinos) {
     grid-template-columns: 2fr repeat(2, 1fr);
@@ -502,5 +508,3 @@ section .imagen-libros::after {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
   }
 }
-
-/*# sourceMappingURL=style.css.map */

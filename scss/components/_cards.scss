@@ -137,6 +137,14 @@ section {
     margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+
+    .img-nosotros {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 @media (min-width: 1024px) {
 
