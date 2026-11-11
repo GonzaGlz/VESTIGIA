@@ -48,6 +48,7 @@ El proyecto está compuesto por cinco páginas principales:
 
 ## Estructura del proyecto
 
+```
 VESTIGIA/
 │
 ├── assets/
